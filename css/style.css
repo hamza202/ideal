@@ -53,7 +53,7 @@ a{
     background: rgba(59 , 195 , 218 , 0.4);
 }
 .top-section{
-    background: url(../image/bg.png) no-repeat center center;
+    background: url(../image/bg.svg) no-repeat center center;
     background-size: 100% , cover;
     position: relative;
 }
