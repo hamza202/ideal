@@ -11,9 +11,20 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/smal-logo.png">
+
     <title>IDEAL</title>
 </head>
 <body>
+<section class="loading ">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col align-self-center">
+                <div class="loader-funky-bar"></div>
+            </div>
+        </div>
+    </div>
+</section>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
@@ -732,7 +743,19 @@
         var marker = new google.maps.Marker({position: uluru, map: map, icon: 'image/marekr.png'});
     }
 </script>
+<script>
+    $(window).on('load', function ()
+    {
+        $(".loading").fadeOut(1000,
+            function()
+            {
+                $("body").css("overflow","auto");
+                $(this).remove();
+            });
 
+    });
+
+</script>
 <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnUdRz1exsvXmDb_XVmPk3v7FWi7XCH9E&callback=initMap">
 </script>
