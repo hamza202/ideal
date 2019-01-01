@@ -149,7 +149,13 @@
     <div class="container-fluid serves-slider">
         <div class="row">
             <div class="col-12">
-                <a href="#"></a>
+                <div class="position-relative go-down-container">
+                    <a class="go-down scroll" href="#our-work-section">
+                        <span class="request-link">
+                            <i class="fal fa-angle-down"></i>
+                        </span>
+                    </a>
+                </div>
             </div>
             <div class="col-lg-10 p-0 offset-lg-2">
                 <div class="owl-carousel owl-theme">
@@ -257,7 +263,7 @@
         </div>
     </div>
 </section>
-<section class="our-work-section ">
+<section class="our-work-section" id="our-work-section">
     <div class="container">
         <div class="row mb-3">
             <div class="col-md-3">
@@ -755,6 +761,18 @@
 
     });
 
+    $(document).ready(function() {
+
+        var scrollLink = $('.scroll');
+
+        // Smooth scrolling
+        scrollLink.click(function(e) {
+            e.preventDefault();
+            $('body,html').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 1000 );
+        });
+    });
 </script>
 <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnUdRz1exsvXmDb_XVmPk3v7FWi7XCH9E&callback=initMap">
