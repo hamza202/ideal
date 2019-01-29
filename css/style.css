@@ -704,13 +704,29 @@ p.copyright{
     padding: 40px 30px;
     border-radius: 50px 0 70px 0;
     margin-bottom: 40px;
+    height: 405px;
+    transition: all 0.4s ease-in-out;
 }
 
 .Services-card h3{
     font-size: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .service-page-section .work-card{
     margin-bottom: 30px;
+}
+.Services-card p{
+    height: 216px;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+.Services-card.auto-height{
+    height: calc( 100% - 40px);
+}
+.Services-card.auto-height p{
+    height: 100%;
 }
 .footer-container p a{
     color: #4e4e4e;
