@@ -304,6 +304,11 @@ a.go-down span::before{
     -moz-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.50);
     box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.50);
 }
+header{
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.36);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.36);
+}
 .navbar-light.fixed-header .small-logo{
     display: inline-block;
     height: 50px;
@@ -781,6 +786,43 @@ p.copyright{
     height: 100%;
 }
     /*End about page*/
+/*Start contact us*/
+.contact-us .form-group i{
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    font-size: 18px;
+    transform: translateY(-59%);
+    color: #989898;
+}
+.contact-us .form-group input{
+    padding-left: 50px;
+    height: 45px;
+    border-radius: 16px;
+    color: #989898;
+}
+.contact-us .form-group textarea{
+    background-color: #F5FBFD;
+    border-radius: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.contact-us  button{
+    background-color:#2BAAE2;
+    color: #fff;
+    border: 0;
+    border-radius: 16px;
+    height: 43px;
+    display: block;
+    width: 100%;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.contact-us  button:hover{
+    background-color: #19A6CF;
+}
+/*End contact us*/
 .footer-container p a{
     color: #4e4e4e;
 }
