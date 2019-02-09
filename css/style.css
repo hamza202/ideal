@@ -1036,6 +1036,29 @@ ul.slides li{
     padding-left: 50px;
 }
 /*End contact us*/
+/*Start newsletter section*/
+.newsletter{
+    background: url(../image/footer-mask.png)  rgba(59, 195, 218 , 0.2) no-repeat center center;
+    padding: 70px 0;
+}
+.newsletter-input{
+    background: rgba(59, 195, 218, 0.13);
+    height: 45px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.newsletter-btn.btn-info{
+    height: 45px;
+    background-color: #3bc3da;
+    border-color: #3bc3da;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.newsletter-btn{
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+/*End newsletter section*/
 .footer-container p a {
     color: #4e4e4e;
 }

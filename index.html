@@ -448,6 +448,33 @@
         </div>
     </div>
 </section>
+<section class="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h3>
+                    Stay in touch with us
+                </h3>
+                <p>
+                    we will send our last news to your mail
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <form action="#">
+                    <div class="input-group ">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-info newsletter-btn" type="submit">submit</button>
+                        </div>
+                        <input type="email" required class="form-control newsletter-input" placeholder="Your Email"
+                               aria-label="" aria-describedby="basic-addon1">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -573,16 +600,16 @@
     });
 </script>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
 
         var scrollLink = $('.scroll');
 
         // Smooth scrolling
-        scrollLink.click(function(e) {
+        scrollLink.click(function (e) {
             e.preventDefault();
             $('body,html').animate({
                 scrollTop: $(this.hash).offset().top
-            }, 1000 );
+            }, 1000);
         });
     });
 </script>
