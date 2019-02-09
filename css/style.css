@@ -366,6 +366,8 @@ header {
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.36);
     -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.36);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.36);
+    z-index: 999;
+    position: relative;
 }
 
 .navbar-light.fixed-header .small-logo {
@@ -970,8 +972,21 @@ ul.slides li{
     position: absolute;
     margin: 0;
     text-align: center;
-    background-color: rgba(59, 195, 218, 0.6392156862745098);
+    background-color: rgba(59, 195, 218, 0.63);
     color: #fff;
+}
+.full-img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    right: 0;
+    padding: 0;
+    bottom: 0;
+}
+.full-img img {
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 /* End work section */
@@ -1015,7 +1030,11 @@ ul.slides li{
 .contact-us button:hover {
     background-color: #19A6CF;
 }
-
+.contact-us select{
+    border-radius: 16px;
+    height: 45px;
+    padding-left: 50px;
+}
 /*End contact us*/
 .footer-container p a {
     color: #4e4e4e;
