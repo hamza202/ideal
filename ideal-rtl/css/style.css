@@ -39,7 +39,27 @@ body p {
 .navbar-light .navbar-nav .nav-link {
     color: #989898;
 }
+.navbar .dropdown .dropdown-menu a{
+    text-align: right;
+}
+.navbar .dropdown-menu{
+    left: auto;
+    right: 25px;
+    padding: 0;
+    border-radius: 0;
 
+}
+.navbar .dropdown-menu a{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    background-color: #2BAAE2;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.navbar .dropdown-menu a:not(:last-child){
+    border-bottom: 1px #fff solid;
+}
 a {
     transition: all 0.3s ease-in-out;
     text-decoration: none !important;
@@ -90,12 +110,12 @@ a {
 }
 
 .top-section .carousel-caption {
-    text-align: left;
+    text-align: right;
 }
 
 .top-section .carousel-indicators {
-    right: 0;
-    left: auto;
+    right: auto;
+    left: 0;
 
 }
 
@@ -175,7 +195,7 @@ a.go-down span::before {
 }
 
 .quote-link {
-    padding: 5px 10px 3px 40px;
+    padding: 5px 40px 3px 10px;
     position: relative;
     border: 1px solid #3BC3DA;
     color: #3BC3DA;
@@ -187,7 +207,7 @@ a.go-down span::before {
     width: 1px;
     height: 33px;
     background: #3BC3DA;
-    left: 30px;
+    right: 30px;
     top: 0;
     position: absolute;
 }
@@ -212,9 +232,14 @@ a.go-down span::before {
 /*}*/
 .quote-link i {
     position: absolute;
-    left: 10px;
+    right: 10px;
     font-size: 28px;
     top: 2px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 /*service-slider Start*/
@@ -227,8 +252,8 @@ a.go-down span::before {
 
 .serves-slider .item {
     padding-top: 60px;
-    padding-left: 60px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 60px;
 }
 
 .serves-slider .item img {
@@ -242,8 +267,8 @@ a.go-down span::before {
 }
 
 .serves-slider .owl-nav {
-    padding-right: 248px;
-    text-align: right;
+    padding-left: 248px;
+    text-align: left;
 }
 
 .serves-slider .owl-nav .owl-prev {
@@ -265,6 +290,11 @@ a.go-down span::before {
 
 .serves-slider .owl-nav button.owl-next i {
     transition: all 0.3s ease-in-out;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .serves-slider .owl-nav button.owl-next:hover i {
@@ -322,7 +352,7 @@ a.go-down span::before {
     position: absolute;
     background: rgba(59, 195, 218, 0.2);
     bottom: -10px;
-    right: -25px;
+    left: -25px;
 }
 
 .small-about::after {
@@ -333,13 +363,13 @@ a.go-down span::before {
     position: absolute;
     background: rgba(59, 195, 218, 0.2);
     bottom: -25px;
-    right: -25px;
+    left: -25px;
 }
 
 .small-about i {
     position: absolute;
     bottom: -31%;
-    left: 20px;
+    right: 20px;
     font-size: 120px;
     z-index: -1;
     color: rgba(0, 0, 0, 0.1);
@@ -500,7 +530,7 @@ header {
     position: absolute;
     background: rgba(59, 195, 218, 0.2);
     bottom: -10px;
-    right: -25px;
+    left: -25px;
 }
 
 .dream-container::after {
@@ -511,7 +541,7 @@ header {
     position: absolute;
     background: rgba(59, 195, 218, 0.2);
     bottom: -25px;
-    right: -25px;
+    left: -25px;
 }
 
 .fixed-top-section {
@@ -534,13 +564,17 @@ header {
 .count-container::before {
     position: absolute;
     content: '';
-    left: -17px;
+    left: 16px;
     right: 0;
     margin: 0 auto;
     display: block;
     width: 1px;
     height: 99px;
-    transform: rotate(45deg);
+    -webkit-transform:rotate(-45deg) ;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     background: #C5C5C5;
     z-index: 1;
     bottom: -5px;
@@ -548,7 +582,7 @@ header {
 
 .count-container h4 {
     font-size: 40px;
-    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .dream-blue-rectangle {
@@ -558,7 +592,7 @@ header {
     height: 100%;
     z-index: -1;
     top: -25px;
-    left: -25px;
+    right: -25px;
 }
 
 .Brands-section {
@@ -601,6 +635,7 @@ header {
 p.copyright {
     color: #989898;
     font-size: 14px;
+    margin-bottom: 0;
 }
 
 .footer-container .footer-title {
@@ -613,12 +648,12 @@ p.copyright {
     width: 15px;
     height: 3px;
     background-color: #3BC3DA;
-    left: -22px;
+    right: -22px;
     top: 3px;
 }
 
 .footer-social li {
-    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .footer-social li a {
@@ -687,7 +722,7 @@ p.copyright {
 .bg2-abs {
     position: absolute;
     top: -41%;
-    right: -28%;
+    left: -28%;
     width: 127%;
 }
 
@@ -799,7 +834,7 @@ p.copyright {
 .second-title-bg {
     display: inline-block;
     position: relative;
-    padding-left: 15px;
+    padding-right: 15px;
     margin-bottom: 25px;
 }
 
@@ -812,7 +847,7 @@ p.copyright {
     background: url(../image/img-2.png) no-repeat;
     background-size: 100% 100%;
     z-index: -1;
-    left: 0;
+    right: 0;
     top: -20px;
 
 }
@@ -977,9 +1012,9 @@ ul.slides li{
 }
 .full-img {
     position: absolute;
-    left: 50%;
+    right: 50%;
     top: 0;
-    right: 0;
+    left: 0;
     padding: 0;
     bottom: 0;
 }
@@ -993,7 +1028,7 @@ ul.slides li{
 /*Start contact us*/
 .contact-us .form-group i {
     position: absolute;
-    left: 16px;
+    right: 16px;
     top: 50%;
     font-size: 18px;
     transform: translateY(-59%);
@@ -1001,7 +1036,7 @@ ul.slides li{
 }
 
 .contact-us .form-group input {
-    padding-left: 50px;
+    padding-right: 50px;
     height: 45px;
     border-radius: 16px;
     color: #989898;
@@ -1033,7 +1068,7 @@ ul.slides li{
 .contact-us select{
     border-radius: 16px;
     height: 45px;
-    padding-left: 50px;
+    padding-right: 50px;
 }
 /*End contact us*/
 /*Start newsletter section*/
@@ -1044,8 +1079,8 @@ ul.slides li{
 .newsletter-input{
     background: rgba(59, 195, 218, 0.13);
     height: 45px;
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-top-left-radius: 16px !important;
+    border-bottom-left-radius: 16px !important;
 }
 .newsletter-btn.btn-info{
     height: 45px;
@@ -1055,8 +1090,8 @@ ul.slides li{
     padding-right: 20px;
 }
 .newsletter-btn{
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
+    border-top-right-radius: 16px !important;
+    border-bottom-right-radius: 16px !important;
 }
 /*End newsletter section*/
 .footer-container p a {
@@ -1109,7 +1144,7 @@ ul.slides li{
     }
 
     .blue-light-box {
-        margin-left: -250px;
+        margin-right: -250px;
         margin-top: 90px;
     }
 
