@@ -1,29 +1,29 @@
-@font-face {
-    font-family: Seravek;
-    src: url(../font/Seravek.ttf);
-}
+/*@font-face {*/
+    /*font-family: Seravek;*/
+    /*src: url(../font/Seravek.ttf);*/
+/*}*/
 
-@font-face {
-    font-family: Seravek-Light;
-    src: url(../font/Seravek-Light.ttf);
-}
+/*@font-face {*/
+    /*font-family: Seravek-Light;*/
+    /*src: url(../font/Seravek-Light.ttf);*/
+/*}*/
 
-.Seravek-Light {
-    font-family: Seravek-Light, 'sans-serif' !important;
-}
+/*.Seravek-Light {*/
+    /*font-family: Seravek-Light, 'sans-serif' !important;*/
+/*}*/
 
-.Seravek {
-    font-family: Seravek, 'sans-serif' !important;
-}
+/*.Seravek {*/
+    /*font-family: Seravek, 'sans-serif' !important;*/
+/*}*/
 
 body {
-    font-family: Seravek, 'sans-serif' !important;
+    /*font-family: Seravek, 'sans-serif' !important;*/
     color: #4E4E4E;
     overflow: hidden;
 }
 
 body p {
-    font-family: Seravek-Light, 'sans-serif' !important;;
+    /*font-family: Seravek-Light, 'sans-serif' !important;;*/
 }
 
 .navbar-light {
@@ -55,7 +55,7 @@ body p {
     font-size: 18px;
     background-color: #2BAAE2;
     color: #fff;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
 }
 .navbar .dropdown-menu a:not(:last-child){
     border-bottom: 1px #fff solid;
