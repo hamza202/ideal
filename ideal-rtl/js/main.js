@@ -154,9 +154,9 @@ $(window).scroll(function () {
 
     if (scroll >= 300) {
         $(".navbar-light").addClass("fixed-header");
-        $(".top-section").addClass("fixed-top-section");
+        $("body").addClass("fixed-top-section");
     } else {
         $(".navbar-light").removeClass("fixed-header");
-        $(".top-section").removeClass("fixed-top-section");
+        $("body").removeClass("fixed-top-section");
     }
 });
