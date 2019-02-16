@@ -269,6 +269,29 @@
             nextHtml : '<span class="custom-next-html"><i class="far fa-arrow-right"></i></span>',
             pager: false,
             slideMargin:4,
+            responsive : [
+                {
+                    breakpoint:1000,
+                    settings: {
+                        item:3,
+                        slideMove:1,
+                    }
+                },
+                {
+                    breakpoint:700,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                },
+                {
+                    breakpoint:400,
+                    settings: {
+                        item:1,
+                        slideMove:1
+                    }
+                }
+            ],
             enableDrag: false,
             onSliderLoad: function(el) {
                 el.lightGallery({

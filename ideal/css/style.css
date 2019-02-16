@@ -1150,7 +1150,7 @@ ul.slides li{
 .work-img{
     width: 100%;
     object-fit: cover;
-    max-height: 370px;
+    max-height: 450px;
     margin-bottom: 10px;
 }
 /*Start Media query*/
