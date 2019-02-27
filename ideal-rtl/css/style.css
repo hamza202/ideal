@@ -1167,6 +1167,9 @@ ul.slides li{
     max-height: 450px;
     margin-bottom: 10px;
 }
+.lg-outer{
+    direction: ltr;
+}
 /*Start Media query*/
 @media (max-width: 992px) {
     ul.navbar-nav {
